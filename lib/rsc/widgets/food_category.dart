@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+import 'package:food_delivery/rsc/widgets/food_card.dart';
+
+//Data
+import '../data/categort_data.dart';
+
+//Model
+import '../models/category_model.dart';
+
+
+
+class FoodCategory extends StatelessWidget{
+
+final List<Category> _categories= categories; 
+
+ @override
+  Widget build(BuildContext context) {
+    return 
+    Container(
+      width: 50,
+      child:  ListView.builder(
+      scrollDirection: Axis.horizontal,
+      itemCount: _categories.length,
+      itemBuilder: (BuildContext context,int index){
+        return FoodCard();
+      },
+    ),
+    );
+  }
+}
