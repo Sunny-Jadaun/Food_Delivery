@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/rsc/data/food_data.dart';
-import 'package:food_delivery/rsc/widgets/bought_food.dart';
-import 'package:food_delivery/rsc/widgets/food_category.dart';
-import 'package:food_delivery/rsc/widgets/home_top_info.dart';
-import 'package:food_delivery/rsc/widgets/search_field.dart';
-import '../rsc/models/food_model.dart';
+import 'package:../food_delivery/rsc/data/food_data.dart';
+import 'package:../food_delivery/rsc/widgets/bought_food.dart';
+import 'package:../food_delivery/rsc/widgets/food_category.dart';
+import 'package:../food_delivery/rsc/widgets/home_top_info.dart';
+import 'package:../food_delivery/rsc/widgets/search_field.dart';
+import 'package:../food_delivery/rsc/models/food_model.dart';
 
 
-class HomeScreen extends StatefulWidget{
+class HomePage extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
-    return _HomeScreenState();
+    return _HomePageState();
   }
 }
 
-class _HomeScreenState extends State<HomeScreen>{
+class _HomePageState extends State<HomePage>{
 
   List<Food> _foods=foods;
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './homescreen.dart';
-
+import 'package:food_delivery/rsc/screens/main_screen.dart';
+import '../rsc/screens/main_screen.dart';
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget{
         primaryColor: Colors.blueAccent,
         accentColor: Colors.orangeAccent
       ),
-      home: HomeScreen(),
+      home: MainScreen(),
     );
   }
 }
